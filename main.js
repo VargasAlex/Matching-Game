@@ -31,3 +31,10 @@ for (i = 0; i < gameGrid.length; i++) {
   grid.appendChild(card);
 }
 
+grid.addEventListener('click', function (event) {
+  let clicked = event.target;
+  if (clicked.nodeName === 'SECTION') {
+    return;
+  }
+  clicked.classList.add('selected');
+})
