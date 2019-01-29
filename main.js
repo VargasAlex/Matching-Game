@@ -31,14 +31,37 @@ for (i = 0; i < gameGrid.length; i++) {
   grid.appendChild(card);
 }
 
+let firstGuess = '';
+let secondGuess = '';
 let count = 0;
+let previousTarget = null;
+
+let match = function() {
+  let selected = document.querySelectorAll('.selected');
+  for (i = 0; i < selected.length; i++) {
+    selected[i].classList.add('match');
+  }
+}
+
 grid.addEventListener('click', function (event) {
   let clicked = event.target;
-  if (clicked.nodeName === 'SECTION') {
+  if (clicked.nodeName === 'SECTION' || clicked === previousTarget || clicked.parentNode.classList.contains('match') || clicked.parentNode.classList.contains('selected')) {
     return;
   }
   if (count < 2) {
     count++;
-    clicked.classList.add('selected');
+    if (count === 1) {
+      firstGuess = clicked.dataset.name;
+      clicked.classList.add('selected');
+    } else {
+      secondGuess = clicked.dataset.name;
+      clicked.classList.add('selected');
+    }
+    if (firstGuess !== '' && secondGuess !== '') {
+      if (firstGuess === secondGuess) {
+        match()
+      }
+    }
+    previousTarget = clicked
   }
 })
