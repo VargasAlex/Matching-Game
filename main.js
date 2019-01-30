@@ -43,6 +43,19 @@ let match = function() {
   }
 }
 
+let resetGuesses = function() {
+  firstGuess = '';
+  secondGuess = '';
+  count = 0;
+  previousTarget = null;
+
+  let selected = document.querySelectorAll('.selected');
+
+  for (i = 0; i < selected.length; i++) {
+    selected[i].classList.remove('selected');
+  }
+}
+
 grid.addEventListener('click', function (event) {
   let clicked = event.target;
   if (clicked.nodeName === 'SECTION' || clicked === previousTarget || clicked.parentNode.classList.contains('match') || clicked.parentNode.classList.contains('selected')) {
@@ -60,6 +73,9 @@ grid.addEventListener('click', function (event) {
     if (firstGuess !== '' && secondGuess !== '') {
       if (firstGuess === secondGuess) {
         match()
+        resetGuesses();
+      } else {
+        resetGuesses()
       }
     }
     previousTarget = clicked
