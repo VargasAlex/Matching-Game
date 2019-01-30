@@ -35,6 +35,7 @@ let firstGuess = '';
 let secondGuess = '';
 let count = 0;
 let previousTarget = null;
+let delay = 1200;
 
 let match = function() {
   let selected = document.querySelectorAll('.selected');
@@ -72,10 +73,10 @@ grid.addEventListener('click', function (event) {
     }
     if (firstGuess !== '' && secondGuess !== '') {
       if (firstGuess === secondGuess) {
-        match()
-        resetGuesses();
+        setTimeout(match, delay)
+        setTimeout(resetGuesses, delay);
       } else {
-        resetGuesses()
+        setTimeout(resetGuesses, delay);
       }
     }
     previousTarget = clicked
