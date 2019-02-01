@@ -1,20 +1,20 @@
-let cardsArray = [
-  { 'name': 'CSS', 'img': 'https://github.com/robgmerrill/img/blob/master/css3-logo.png?raw=true', },
-  { 'name': 'HTML', 'img': 'https://github.com/robgmerrill/img/blob/master/html5-logo.png?raw=true', },
-  { 'name': 'jQuery', 'img': 'https://github.com/robgmerrill/img/blob/master/jquery-logo.png?raw=true', },
-  { 'name': 'JS', 'img': 'https://github.com/robgmerrill/img/blob/master/js-logo.png?raw=true', },
-  { 'name': 'Node', 'img': 'https://github.com/robgmerrill/img/blob/master/nodejs-logo.png?raw=true', },
-  { 'name': 'Photo Shop', 'img': 'https://github.com/robgmerrill/img/blob/master/photoshop-logo.png?raw=true', },
-  { 'name': 'PHP', 'img': 'https://github.com/robgmerrill/img/blob/master/php-logo_1.png?raw=true', },
-  { 'name': 'Python', 'img': 'https://github.com/robgmerrill/img/blob/master/python-logo.png?raw=true', },
-  { 'name': 'Ruby', 'img': 'https://github.com/robgmerrill/img/blob/master/rails-logo.png?raw=true', },
-  { 'name': 'Sass', 'img': 'https://github.com/robgmerrill/img/blob/master/sass-logo.png?raw=true', },
-  { 'name': 'Sublime', 'img': 'https://github.com/robgmerrill/img/blob/master/sublime-logo.png?raw=true', },
-  { 'name': 'Wordpress', 'img': 'https://github.com/robgmerrill/img/blob/master/wordpress-logo.png?raw=true', },
+let animals = [
+  { 'name': 'Cow', 'img': './images/Cow.png', },
+  { 'name': 'Giraffe', 'img': './images/Giraffe.png', },
+  { 'name': 'Elephant', 'img': './images/Elephant.png', },
+  { 'name': 'Tiger', 'img': './images/Tiger.png', },
+  { 'name': 'Owl', 'img': './images/Owl.png', },
+  { 'name': 'Seal', 'img': './images/Seal.png', },
+  { 'name': 'Monkey', 'img': './images/Monkey.png', },
+  { 'name': 'Kangaroo', 'img': './images/Kangaroo.png', },
+  { 'name': 'Whale', 'img': './images/Whale.png', },
+  { 'name': 'Dinosaur', 'img': './images/Dinosaur.png', },
+  { 'name': 'Goat', 'img': './images/Goat.png', },
+  { 'name': 'Penguin', 'img': './images/Penguin.png', },
 ];
 
 // Duplicate the array to create matches
-let gameGrid = cardsArray.concat(cardsArray);
+let gameGrid = animals.concat(animals);
 
 // Randomize the cards
 gameGrid.sort(function() {
