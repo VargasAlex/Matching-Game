@@ -105,7 +105,11 @@ grid.addEventListener('click', function (event) {
     }
     if (firstGuess !== '' && secondGuess !== '') {
       if (firstGuess === secondGuess) {
-        setTimeout(match, 1200)
+        setTimeout(match,
+          document.querySelector('.card-match').style.display = "block", 1000);
+        setTimeout(function () {
+          document.querySelector('.card-match').style.display = "none"
+        }, 1600)
         setTimeout(resetGuesses, 1200);
       } else {
         setTimeout(resetGuesses, 1200);
