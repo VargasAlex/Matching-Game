@@ -118,3 +118,10 @@ grid.addEventListener('click', function (event) {
     previousTarget = clicked
   }
 })
+
+
+let button = document.querySelector('.cta');
+
+button.addEventListener('click', function(event) {
+  window.location.reload(event)
+})
