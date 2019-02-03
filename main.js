@@ -106,10 +106,10 @@ grid.addEventListener('click', function (event) {
     if (firstGuess !== '' && secondGuess !== '') {
       if (firstGuess === secondGuess) {
         setTimeout(match,
-          document.querySelector('.card-match').style.display = "block", 1000);
+          document.querySelector('.card-match').style.display = "block", 800);
         setTimeout(function () {
           document.querySelector('.card-match').style.display = "none"
-        }, 1600)
+        }, 1200)
         setTimeout(resetGuesses, 1200);
       } else {
         setTimeout(resetGuesses, 1200);
