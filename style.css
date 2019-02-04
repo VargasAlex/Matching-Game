@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 *,
 *::before,
 *::after {
@@ -125,9 +126,23 @@ body {
   color: #111;
 }
 
+.timer {
+  display: block;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: #94DB91;
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.replay {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
 }
 
 .cta {
@@ -143,7 +158,7 @@ a {
   left: 0;
   display: block;
   border-radius: 28px;
-  background: rgba(255, 171, 157, 0.5);
+  background: #41f46e;
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
@@ -183,7 +198,6 @@ a {
 .restart {
   display: none;
   text-align: center;
-  /* font-family: 'Press Start 2P', cursive; */
   background: url('./images/80s-retro-wallpaper.png');
   background-size: cover;
   height: 100vh;
@@ -192,3 +206,5 @@ a {
   left: 0;
   position: fixed;
 }
+
+
