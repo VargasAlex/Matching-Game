@@ -122,6 +122,7 @@ grid.addEventListener('click', function (event) {
 let time = 60;
 let timer = document.querySelector('.timer');
 let timerId = setInterval(countdown, 1000);
+let music = document.querySelector('.music')
 
 function countdown() {
   if(time === 10) {
@@ -131,6 +132,7 @@ function countdown() {
   if (time === 0) {
     clearTimeout(timerId);
     document.querySelector('.restart').style.display = "block";
+    music.pause();
   } else {
     timer.innerHTML = `${time} seconds remaining`;
     time--;
