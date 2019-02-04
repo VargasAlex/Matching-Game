@@ -119,7 +119,7 @@ grid.addEventListener('click', function (event) {
   }
 })
 
-let time = 90;
+let time = 80;
 let timer = document.querySelector('.timer');
 let timerId = setInterval(countdown, 1000);
 let music = document.querySelector('.music')
