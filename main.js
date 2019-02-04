@@ -119,6 +119,7 @@ grid.addEventListener('click', function (event) {
   }
 })
 
+// create a timer function to indicate remaining time and display a game over background when time runs out.
 let time = 80;
 let timer = document.querySelector('.timer');
 let timerId = setInterval(countdown, 1000);
@@ -139,6 +140,7 @@ function countdown() {
   }
 }
 
+// create a restart button to play again.
 let button = document.querySelector('.cta');
 
 button.addEventListener('click', function(event) {
