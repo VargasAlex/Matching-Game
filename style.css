@@ -179,3 +179,16 @@ a {
 .cta:active {
   transform: scale(0.96);
 }
+
+.restart {
+  display: none;
+  text-align: center;
+  /* font-family: 'Press Start 2P', cursive; */
+  background: url('./images/80s-retro-wallpaper.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+}

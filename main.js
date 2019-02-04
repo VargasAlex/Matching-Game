@@ -119,6 +119,19 @@ grid.addEventListener('click', function (event) {
   }
 })
 
+let time = 30;
+let timer = document.querySelector('.timer');
+let timerId = setInterval(countdown, 1000);
+
+function countdown() {
+  if (time === 0) {
+    clearTimeout(timerId);
+    document.querySelector('.restart').style.display = "block";
+  } else {
+    timer.innerHTML = time + ' seconds remaining';
+    time--;
+  }
+}
 
 let button = document.querySelector('.cta');
 
