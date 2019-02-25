@@ -128,7 +128,7 @@ let end = document.querySelector('.end');
 
 function countdown() {
   if(time === 10) {
-    timer.style.fontSize = "40px";
+    timer.style.fontSize = "30px";
     timer.style.color = "yellow";
   }
   if (time === 0) {
