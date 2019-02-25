@@ -6,13 +6,13 @@
 }
 
 body {
-  margin: 30px 0;
+  margin: 20px 0;
   color: #fff;
-   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-   background-size: 400% 400%;
-   -webkit-animation: Gradient 15s ease infinite;
-   -moz-animation: Gradient 15s ease infinite;
-   animation: Gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -76,12 +76,12 @@ body {
 .back,
 .front {
   position: absolute;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .front {
   z-index: 2;
-  background: rgba(0,0,0,0.6)
+  background: rgba(0,0,0,0.6);
 }
 
 .back {
@@ -106,7 +106,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 45%;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
@@ -133,7 +133,7 @@ body {
     transform: translate(50%,-50%); */
     text-transform: uppercase;
     font-family: 'Fredoka One', cursive;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-size: 2em;
     font-weight: 200;
@@ -143,6 +143,8 @@ body {
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4);
 }
+
+
 
 .timer {
   display: block;
